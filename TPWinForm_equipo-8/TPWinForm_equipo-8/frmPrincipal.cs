@@ -9,5 +9,10 @@ namespace TPWinForm_equipo_8
         {
             InitializeComponent();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
