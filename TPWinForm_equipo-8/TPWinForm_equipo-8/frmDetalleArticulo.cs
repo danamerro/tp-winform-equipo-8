@@ -16,5 +16,10 @@ namespace TPWinForm_equipo_8
         {
             InitializeComponent();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

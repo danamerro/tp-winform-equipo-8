@@ -20,5 +20,17 @@ namespace TPWinForm_equipo_8
             frmArticulos ventana = new frmArticulos();
             ventana.Show();
         }
+
+        private void marcasToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmAdministracionMarca ventana = new frmAdministracionMarca();
+            ventana.Show();
+        }
+
+        private void categoriasToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmAdmCategoria ventana = new frmAdmCategoria();
+            ventana.Show();
+        }
     }
 }
