@@ -11,7 +11,6 @@ namespace TPWinForm_equipo_8
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmPrincipal());
-            //Application.Run(new frmAdmCategoria());
         }
     }
 }
