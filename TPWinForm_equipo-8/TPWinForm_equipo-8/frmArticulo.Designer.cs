@@ -162,7 +162,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(437, 340);
+            this.btnGuardar.Location = new System.Drawing.Point(456, 340);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(96, 39);
             this.btnGuardar.TabIndex = 14;
@@ -171,7 +171,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(614, 340);
+            this.btnCancelar.Location = new System.Drawing.Point(632, 340);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(96, 39);
             this.btnCancelar.TabIndex = 15;
