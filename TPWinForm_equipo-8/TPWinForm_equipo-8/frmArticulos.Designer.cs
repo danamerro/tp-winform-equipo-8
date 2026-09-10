@@ -46,12 +46,12 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(14, 122);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 79);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 240);
+            this.dataGridView1.Size = new System.Drawing.Size(517, 156);
             this.dataGridView1.TabIndex = 0;
             // 
             // gbxArticulos
@@ -61,11 +61,11 @@
             this.gbxArticulos.Controls.Add(this.btnBuscar);
             this.gbxArticulos.Controls.Add(this.lblValor);
             this.gbxArticulos.Controls.Add(this.lblBuscar);
-            this.gbxArticulos.Location = new System.Drawing.Point(14, 18);
-            this.gbxArticulos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbxArticulos.Location = new System.Drawing.Point(9, 12);
+            this.gbxArticulos.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.gbxArticulos.Name = "gbxArticulos";
-            this.gbxArticulos.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbxArticulos.Size = new System.Drawing.Size(776, 99);
+            this.gbxArticulos.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.gbxArticulos.Size = new System.Drawing.Size(517, 64);
             this.gbxArticulos.TabIndex = 21;
             this.gbxArticulos.TabStop = false;
             this.gbxArticulos.Text = "Buscar Artículos";
@@ -74,26 +74,26 @@
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(126, 42);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox1.Location = new System.Drawing.Point(84, 27);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(136, 28);
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 1;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(379, 44);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Location = new System.Drawing.Point(253, 29);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(241, 26);
+            this.textBox1.Size = new System.Drawing.Size(162, 20);
             this.textBox1.TabIndex = 26;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(656, 44);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnBuscar.Location = new System.Drawing.Point(437, 29);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(114, 30);
+            this.btnBuscar.Size = new System.Drawing.Size(76, 20);
             this.btnBuscar.TabIndex = 25;
             this.btnBuscar.Text = "&Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -101,73 +101,78 @@
             // lblValor
             // 
             this.lblValor.AutoSize = true;
-            this.lblValor.Location = new System.Drawing.Point(297, 48);
+            this.lblValor.Location = new System.Drawing.Point(198, 31);
+            this.lblValor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(50, 20);
+            this.lblValor.Size = new System.Drawing.Size(34, 13);
             this.lblValor.TabIndex = 1;
             this.lblValor.Text = "Valor:";
             // 
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(7, 48);
+            this.lblBuscar.Location = new System.Drawing.Point(5, 31);
+            this.lblBuscar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(90, 20);
+            this.lblBuscar.Size = new System.Drawing.Size(61, 13);
             this.lblBuscar.TabIndex = 0;
             this.lblBuscar.Text = "Buscar por:";
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(14, 386);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnNuevo.Location = new System.Drawing.Point(9, 251);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(164, 50);
+            this.btnNuevo.Size = new System.Drawing.Size(109, 32);
             this.btnNuevo.TabIndex = 22;
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(217, 386);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnModificar.Location = new System.Drawing.Point(145, 251);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(164, 50);
+            this.btnModificar.Size = new System.Drawing.Size(109, 32);
             this.btnModificar.TabIndex = 23;
             this.btnModificar.Text = "&Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(624, 386);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnEliminar.Location = new System.Drawing.Point(416, 251);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(164, 50);
+            this.btnEliminar.Size = new System.Drawing.Size(109, 32);
             this.btnEliminar.TabIndex = 24;
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             // 
             // btnDetalle
             // 
-            this.btnDetalle.Location = new System.Drawing.Point(421, 386);
-            this.btnDetalle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDetalle.Location = new System.Drawing.Point(281, 251);
+            this.btnDetalle.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnDetalle.Name = "btnDetalle";
-            this.btnDetalle.Size = new System.Drawing.Size(164, 50);
+            this.btnDetalle.Size = new System.Drawing.Size(109, 32);
             this.btnDetalle.TabIndex = 25;
             this.btnDetalle.Text = "Ver &Detalle";
             this.btnDetalle.UseVisualStyleBackColor = true;
+            this.btnDetalle.Click += new System.EventHandler(this.btnDetalle_Click);
             // 
             // frmArticulos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 464);
+            this.ClientSize = new System.Drawing.Size(535, 302);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnDetalle);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.gbxArticulos);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "frmArticulos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado de Artículo";

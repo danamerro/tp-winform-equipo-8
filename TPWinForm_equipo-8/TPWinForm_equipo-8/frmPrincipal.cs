@@ -14,5 +14,11 @@ namespace TPWinForm_equipo_8
         {
             Application.Exit();
         }
+
+        private void articulosToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            frmArticulos ventana = new frmArticulos();
+            ventana.Show();
+        }
     }
 }

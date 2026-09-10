@@ -16,5 +16,23 @@ namespace TPWinForm_equipo_8
         {
             InitializeComponent();
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            frmArticulo ventana = new frmArticulo();
+            ventana.Show();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            frmArticulo ventana = new frmArticulo();
+            ventana.Show();
+        }
+
+        private void btnDetalle_Click(object sender, EventArgs e)
+        {
+            frmDetalleArticulo ventana = new frmDetalleArticulo();
+            ventana.Show();
+        }
     }
 }
