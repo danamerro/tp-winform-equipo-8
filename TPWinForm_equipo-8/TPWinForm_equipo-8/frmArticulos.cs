@@ -34,5 +34,11 @@ namespace TPWinForm_equipo_8
             frmDetalleArticulo ventana = new frmDetalleArticulo();
             ventana.Show();
         }
+
+        // La eliminación se implementará en la Etapa 2 con la conexión a la base de datos.
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
