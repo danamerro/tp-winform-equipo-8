@@ -60,6 +60,12 @@
     <Compile Include="frmAdministracionMarca.Designer.cs">
       <DependentUpon>frmAdministracionMarca.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgregarDescripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarDescripcion.Designer.cs">
+      <DependentUpon>frmAgregarDescripcion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmArticulo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAdministracionMarca.resx">
       <DependentUpon>frmAdministracionMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarDescripcion.resx">
+      <DependentUpon>frmAgregarDescripcion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmArticulo.resx">
       <DependentUpon>frmArticulo.cs</DependentUpon>
@@ -130,6 +139,10 @@
     <ProjectReference Include="..\dominio\dominio.csproj">
       <Project>{8a8e9696-714a-4466-8435-9c934cd92b21}</Project>
       <Name>dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\negocio\negocio.csproj">
+      <Project>{7ae3ee38-7b84-40f9-8f84-a623c3c29975}</Project>
+      <Name>negocio</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
