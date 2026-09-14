@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="dominio/dominio.csproj" Id="8a8e9696-714a-4466-8435-9c934cd92b21" />
+  <Project Path="negocio/negocio.csproj" Id="7ae3ee38-7b84-40f9-8f84-a623c3c29975" />
   <Project Path="TPWinForm_equipo-8/TPWinForm_equipo-8.csproj" Id="659188b8-ec94-45bb-a192-165967728dc9" />
 </Solution>
