@@ -1,6 +1,6 @@
 ﻿namespace TPWinForm_equipo_8
 {
-    partial class frmAgregarDescripcion
+    partial class frmDescripcionCategoria
     {
         /// <summary>
         /// Required designer variable.
@@ -71,7 +71,7 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // frmAgregarDescripcion
+            // frmDescripcionCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,9 +80,9 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.tbxDescripcion);
             this.Controls.Add(this.lblDescripcion);
-            this.Name = "frmAgregarDescripcion";
+            this.Name = "frmDescripcionCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Descripción";
+            this.Text = "Categoría";
             this.Load += new System.EventHandler(this.frmAgregarDescripcion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

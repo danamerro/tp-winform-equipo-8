@@ -43,8 +43,9 @@
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(132, 43);
             this.btnNuevo.TabIndex = 0;
-            this.btnNuevo.Text = "&Nuevo";
+            this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnModificar
             // 
@@ -53,8 +54,9 @@
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(132, 43);
             this.btnModificar.TabIndex = 1;
-            this.btnModificar.Text = "&Modificar";
+            this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminarAdmMarca
             // 
@@ -63,8 +65,9 @@
             this.btnEliminarAdmMarca.Name = "btnEliminarAdmMarca";
             this.btnEliminarAdmMarca.Size = new System.Drawing.Size(132, 43);
             this.btnEliminarAdmMarca.TabIndex = 2;
-            this.btnEliminarAdmMarca.Text = "&Eliminar";
+            this.btnEliminarAdmMarca.Text = "Eliminar";
             this.btnEliminarAdmMarca.UseVisualStyleBackColor = true;
+            this.btnEliminarAdmMarca.Click += new System.EventHandler(this.btnEliminarAdmMarca_Click);
             // 
             // dgvMarcas
             // 

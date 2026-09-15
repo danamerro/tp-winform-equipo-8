@@ -60,11 +60,11 @@
     <Compile Include="frmAdmMarca.Designer.cs">
       <DependentUpon>frmAdmMarca.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAgregarDescripcion.cs">
+    <Compile Include="frmDescripcionCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAgregarDescripcion.Designer.cs">
-      <DependentUpon>frmAgregarDescripcion.cs</DependentUpon>
+    <Compile Include="frmDescripcionCategoria.Designer.cs">
+      <DependentUpon>frmDescripcionCategoria.cs</DependentUpon>
     </Compile>
     <Compile Include="frmArticulo.cs">
       <SubType>Form</SubType>
@@ -77,6 +77,12 @@
     </Compile>
     <Compile Include="frmArticulos.Designer.cs">
       <DependentUpon>frmArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDescripcionMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDescripcionMarca.Designer.cs">
+      <DependentUpon>frmDescripcionMarca.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDetalleArticulo.cs">
       <SubType>Form</SubType>
@@ -98,14 +104,17 @@
     <EmbeddedResource Include="frmAdmMarca.resx">
       <DependentUpon>frmAdmMarca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAgregarDescripcion.resx">
-      <DependentUpon>frmAgregarDescripcion.cs</DependentUpon>
+    <EmbeddedResource Include="frmDescripcionCategoria.resx">
+      <DependentUpon>frmDescripcionCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmArticulo.resx">
       <DependentUpon>frmArticulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmArticulos.resx">
       <DependentUpon>frmArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDescripcionMarca.resx">
+      <DependentUpon>frmDescripcionMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDetalleArticulo.resx">
       <DependentUpon>frmDetalleArticulo.cs</DependentUpon>

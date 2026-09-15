@@ -47,5 +47,43 @@ namespace TPWinForm_equipo_8
         {
             Close();
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            frmDescripcionMarca marca = new frmDescripcionMarca();
+            marca.ShowDialog();
+            cargar();
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            Marca seleccionado;
+            seleccionado = (Marca)dgvMarcas.CurrentRow.DataBoundItem;
+
+            frmDescripcionMarca modificar = new frmDescripcionMarca(seleccionado);
+            modificar.ShowDialog();
+            cargar();
+        }
+
+        private void btnEliminarAdmMarca_Click(object sender, EventArgs e)
+        {
+            MarcaNegocio neg = new MarcaNegocio();
+            Marca seleccionado;
+            try
+            {
+               DialogResult respuesta = MessageBox.Show("¿De verdad queres Eliminar?", "Eliminado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+               
+                if(respuesta == DialogResult.Yes)
+                {
+                    seleccionado = (Marca)dgvMarcas.CurrentRow.DataBoundItem;
+                    neg.eliminar(seleccionado.Id);
+                    cargar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

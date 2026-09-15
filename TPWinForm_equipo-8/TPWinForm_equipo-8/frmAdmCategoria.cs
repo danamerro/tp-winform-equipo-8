@@ -48,7 +48,7 @@ namespace TPWinForm_equipo_8
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            frmAgregarDescripcion categorias = new frmAgregarDescripcion();
+            frmDescripcionCategoria categorias = new frmDescripcionCategoria();
             categorias.ShowDialog();
             cargar();
 
@@ -59,7 +59,7 @@ namespace TPWinForm_equipo_8
             Categoria seleccionado;
             seleccionado = (Categoria)dgvAdmCategoria.CurrentRow.DataBoundItem;
 
-            frmAgregarDescripcion modificar = new frmAgregarDescripcion(seleccionado);
+            frmDescripcionCategoria modificar = new frmDescripcionCategoria(seleccionado);
             modificar.ShowDialog();
             cargar();
 

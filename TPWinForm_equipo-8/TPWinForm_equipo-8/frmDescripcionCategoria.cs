@@ -12,15 +12,15 @@ using System.Windows.Forms;
 
 namespace TPWinForm_equipo_8
 {
-    public partial class frmAgregarDescripcion : Form
+    public partial class frmDescripcionCategoria : Form
     {
         private Categoria categoria = null;
 
-        public frmAgregarDescripcion()
+        public frmDescripcionCategoria()
         {
             InitializeComponent();
         }
-        public frmAgregarDescripcion(Categoria categoria)
+        public frmDescripcionCategoria(Categoria categoria)
         {
             InitializeComponent();
             this.categoria = categoria;
