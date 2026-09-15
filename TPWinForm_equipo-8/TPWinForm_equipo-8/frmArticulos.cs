@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using negocio;
+using dominio;
 
 namespace TPWinForm_equipo_8
 {
@@ -16,6 +18,26 @@ namespace TPWinForm_equipo_8
         {
             InitializeComponent();
         }
+
+        private void frmArticulos_Load(object sender, EventArgs e)
+        {
+            cargar();
+        }
+
+
+        private void cargar() { 
+            CatalogoNegocio negocio  = new CatalogoNegocio();
+
+            try
+            {
+                dgvArticulos.DataSource = negocio.listar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
@@ -40,5 +62,7 @@ namespace TPWinForm_equipo_8
         {
 
         }
+
+        
     }
 }
