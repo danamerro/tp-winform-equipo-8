@@ -23,7 +23,7 @@ namespace TPWinForm_equipo_8
 
         private void marcasToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            frmAdministracionMarca ventana = new frmAdministracionMarca();
+            frmAdmMarca ventana = new frmAdmMarca();
             ventana.Show();
         }
 

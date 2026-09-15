@@ -44,6 +44,7 @@
             this.dgvAdmCategoria.Name = "dgvAdmCategoria";
             this.dgvAdmCategoria.RowHeadersWidth = 62;
             this.dgvAdmCategoria.RowTemplate.Height = 28;
+            this.dgvAdmCategoria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvAdmCategoria.Size = new System.Drawing.Size(272, 249);
             this.dgvAdmCategoria.TabIndex = 0;
             // 
