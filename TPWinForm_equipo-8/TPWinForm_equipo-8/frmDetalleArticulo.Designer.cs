@@ -28,200 +28,220 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblMarca = new System.Windows.Forms.Label();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.lblPrecio = new System.Windows.Forms.Label();
-            this.lblDescripcion = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblCodigoTitulo = new System.Windows.Forms.Label();
+            this.lblNombreTitulo = new System.Windows.Forms.Label();
+            this.lblMarcaTitulo = new System.Windows.Forms.Label();
+            this.lblCategoriaTitulo = new System.Windows.Forms.Label();
+            this.lblPrecioTitulo = new System.Windows.Forms.Label();
+            this.lblDescripcionTitulo = new System.Windows.Forms.Label();
+            this.pctbxImagenes = new System.Windows.Forms.PictureBox();
             this.gbxImagenes = new System.Windows.Forms.GroupBox();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.lblCod = new System.Windows.Forms.Label();
-            this.lblNomb = new System.Windows.Forms.Label();
-            this.lblMarc = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.lblCodigoValor = new System.Windows.Forms.Label();
+            this.lblNombreValor = new System.Windows.Forms.Label();
+            this.lblMarcaValor = new System.Windows.Forms.Label();
+            this.lblPrecioValor = new System.Windows.Forms.Label();
+            this.lblCategoriaValor = new System.Windows.Forms.Label();
+            this.lblDescripcionValor = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pctbxImagenes)).BeginInit();
             this.gbxImagenes.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblCodigo
+            // lblCodigoTitulo
             // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(28, 45);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(54, 16);
-            this.lblCodigo.TabIndex = 0;
-            this.lblCodigo.Text = "Código:";
+            this.lblCodigoTitulo.AutoSize = true;
+            this.lblCodigoTitulo.Location = new System.Drawing.Point(21, 37);
+            this.lblCodigoTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCodigoTitulo.Name = "lblCodigoTitulo";
+            this.lblCodigoTitulo.Size = new System.Drawing.Size(43, 13);
+            this.lblCodigoTitulo.TabIndex = 0;
+            this.lblCodigoTitulo.Text = "Código:";
             // 
-            // lblNombre
+            // lblNombreTitulo
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(28, 82);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(59, 16);
-            this.lblNombre.TabIndex = 1;
-            this.lblNombre.Text = "Nombre:";
+            this.lblNombreTitulo.AutoSize = true;
+            this.lblNombreTitulo.Location = new System.Drawing.Point(21, 67);
+            this.lblNombreTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombreTitulo.Name = "lblNombreTitulo";
+            this.lblNombreTitulo.Size = new System.Drawing.Size(47, 13);
+            this.lblNombreTitulo.TabIndex = 1;
+            this.lblNombreTitulo.Text = "Nombre:";
             // 
-            // lblMarca
+            // lblMarcaTitulo
             // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(28, 121);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(48, 16);
-            this.lblMarca.TabIndex = 2;
-            this.lblMarca.Text = "Marca:";
+            this.lblMarcaTitulo.AutoSize = true;
+            this.lblMarcaTitulo.Location = new System.Drawing.Point(21, 98);
+            this.lblMarcaTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMarcaTitulo.Name = "lblMarcaTitulo";
+            this.lblMarcaTitulo.Size = new System.Drawing.Size(40, 13);
+            this.lblMarcaTitulo.TabIndex = 2;
+            this.lblMarcaTitulo.Text = "Marca:";
             // 
-            // lblCategoria
+            // lblCategoriaTitulo
             // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(28, 161);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(69, 16);
-            this.lblCategoria.TabIndex = 3;
-            this.lblCategoria.Text = "Categoría:";
+            this.lblCategoriaTitulo.AutoSize = true;
+            this.lblCategoriaTitulo.Location = new System.Drawing.Point(21, 131);
+            this.lblCategoriaTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategoriaTitulo.Name = "lblCategoriaTitulo";
+            this.lblCategoriaTitulo.Size = new System.Drawing.Size(57, 13);
+            this.lblCategoriaTitulo.TabIndex = 3;
+            this.lblCategoriaTitulo.Text = "Categoría:";
             // 
-            // lblPrecio
+            // lblPrecioTitulo
             // 
-            this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(28, 201);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(49, 16);
-            this.lblPrecio.TabIndex = 4;
-            this.lblPrecio.Text = "Precio:";
+            this.lblPrecioTitulo.AutoSize = true;
+            this.lblPrecioTitulo.Location = new System.Drawing.Point(21, 163);
+            this.lblPrecioTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPrecioTitulo.Name = "lblPrecioTitulo";
+            this.lblPrecioTitulo.Size = new System.Drawing.Size(40, 13);
+            this.lblPrecioTitulo.TabIndex = 4;
+            this.lblPrecioTitulo.Text = "Precio:";
             // 
-            // lblDescripcion
+            // lblDescripcionTitulo
             // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(12, 238);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(82, 16);
-            this.lblDescripcion.TabIndex = 5;
-            this.lblDescripcion.Text = "Descripción:";
+            this.lblDescripcionTitulo.AutoSize = true;
+            this.lblDescripcionTitulo.Location = new System.Drawing.Point(9, 193);
+            this.lblDescripcionTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescripcionTitulo.Name = "lblDescripcionTitulo";
+            this.lblDescripcionTitulo.Size = new System.Drawing.Size(66, 13);
+            this.lblDescripcionTitulo.TabIndex = 5;
+            this.lblDescripcionTitulo.Text = "Descripción:";
             // 
-            // pictureBox1
+            // pctbxImagenes
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 221);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.pctbxImagenes.Location = new System.Drawing.Point(4, 17);
+            this.pctbxImagenes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pctbxImagenes.Name = "pctbxImagenes";
+            this.pctbxImagenes.Size = new System.Drawing.Size(193, 180);
+            this.pctbxImagenes.TabIndex = 6;
+            this.pctbxImagenes.TabStop = false;
             // 
             // gbxImagenes
             // 
             this.gbxImagenes.Controls.Add(this.btnSiguiente);
             this.gbxImagenes.Controls.Add(this.btnAnterior);
-            this.gbxImagenes.Controls.Add(this.pictureBox1);
-            this.gbxImagenes.Location = new System.Drawing.Point(345, 38);
+            this.gbxImagenes.Controls.Add(this.pctbxImagenes);
+            this.gbxImagenes.Location = new System.Drawing.Point(259, 31);
+            this.gbxImagenes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbxImagenes.Name = "gbxImagenes";
-            this.gbxImagenes.Size = new System.Drawing.Size(274, 290);
+            this.gbxImagenes.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbxImagenes.Size = new System.Drawing.Size(206, 236);
             this.gbxImagenes.TabIndex = 13;
             this.gbxImagenes.TabStop = false;
             this.gbxImagenes.Text = "Imágenes";
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.Location = new System.Drawing.Point(156, 248);
+            this.btnSiguiente.Location = new System.Drawing.Point(117, 202);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(98, 32);
+            this.btnSiguiente.Size = new System.Drawing.Size(74, 26);
             this.btnSiguiente.TabIndex = 1;
             this.btnSiguiente.Text = "&Siguiente >";
             this.btnSiguiente.UseVisualStyleBackColor = true;
             // 
             // btnAnterior
             // 
-            this.btnAnterior.Location = new System.Drawing.Point(21, 248);
+            this.btnAnterior.Location = new System.Drawing.Point(16, 202);
+            this.btnAnterior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAnterior.Name = "btnAnterior";
-            this.btnAnterior.Size = new System.Drawing.Size(94, 32);
+            this.btnAnterior.Size = new System.Drawing.Size(70, 26);
             this.btnAnterior.TabIndex = 0;
             this.btnAnterior.Text = "< &Anterior";
             this.btnAnterior.UseVisualStyleBackColor = true;
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(525, 334);
+            this.btnCerrar.Location = new System.Drawing.Point(394, 271);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(94, 32);
+            this.btnCerrar.Size = new System.Drawing.Size(70, 26);
             this.btnCerrar.TabIndex = 11;
             this.btnCerrar.Text = "&Cerrar";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // lblCod
+            // lblCodigoValor
             // 
-            this.lblCod.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCod.Location = new System.Drawing.Point(103, 38);
-            this.lblCod.Name = "lblCod";
-            this.lblCod.Size = new System.Drawing.Size(218, 28);
-            this.lblCod.TabIndex = 14;
+            this.lblCodigoValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCodigoValor.Location = new System.Drawing.Point(77, 31);
+            this.lblCodigoValor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCodigoValor.Name = "lblCodigoValor";
+            this.lblCodigoValor.Size = new System.Drawing.Size(164, 23);
+            this.lblCodigoValor.TabIndex = 14;
             // 
-            // lblNomb
+            // lblNombreValor
             // 
-            this.lblNomb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblNomb.Location = new System.Drawing.Point(103, 76);
-            this.lblNomb.Name = "lblNomb";
-            this.lblNomb.Size = new System.Drawing.Size(218, 29);
-            this.lblNomb.TabIndex = 15;
+            this.lblNombreValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblNombreValor.Location = new System.Drawing.Point(77, 62);
+            this.lblNombreValor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNombreValor.Name = "lblNombreValor";
+            this.lblNombreValor.Size = new System.Drawing.Size(164, 24);
+            this.lblNombreValor.TabIndex = 15;
             // 
-            // lblMarc
+            // lblMarcaValor
             // 
-            this.lblMarc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblMarc.Location = new System.Drawing.Point(103, 115);
-            this.lblMarc.Name = "lblMarc";
-            this.lblMarc.Size = new System.Drawing.Size(218, 29);
-            this.lblMarc.TabIndex = 16;
+            this.lblMarcaValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblMarcaValor.Location = new System.Drawing.Point(77, 93);
+            this.lblMarcaValor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMarcaValor.Name = "lblMarcaValor";
+            this.lblMarcaValor.Size = new System.Drawing.Size(164, 24);
+            this.lblMarcaValor.TabIndex = 16;
             // 
-            // label1
+            // lblPrecioValor
             // 
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(103, 193);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 29);
-            this.label1.TabIndex = 17;
+            this.lblPrecioValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblPrecioValor.Location = new System.Drawing.Point(77, 157);
+            this.lblPrecioValor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPrecioValor.Name = "lblPrecioValor";
+            this.lblPrecioValor.Size = new System.Drawing.Size(164, 24);
+            this.lblPrecioValor.TabIndex = 17;
             // 
-            // label2
+            // lblCategoriaValor
             // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(103, 154);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(218, 29);
-            this.label2.TabIndex = 18;
+            this.lblCategoriaValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCategoriaValor.Location = new System.Drawing.Point(77, 125);
+            this.lblCategoriaValor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategoriaValor.Name = "lblCategoriaValor";
+            this.lblCategoriaValor.Size = new System.Drawing.Size(164, 24);
+            this.lblCategoriaValor.TabIndex = 18;
             // 
-            // label3
+            // lblDescripcionValor
             // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(103, 232);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(218, 93);
-            this.label3.TabIndex = 19;
+            this.lblDescripcionValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblDescripcionValor.Location = new System.Drawing.Point(77, 188);
+            this.lblDescripcionValor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDescripcionValor.Name = "lblDescripcionValor";
+            this.lblDescripcionValor.Size = new System.Drawing.Size(164, 76);
+            this.lblDescripcionValor.TabIndex = 19;
             // 
             // frmDetalleArticulo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 371);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblMarc);
-            this.Controls.Add(this.lblNomb);
-            this.Controls.Add(this.lblCod);
+            this.ClientSize = new System.Drawing.Size(473, 301);
+            this.Controls.Add(this.lblDescripcionValor);
+            this.Controls.Add(this.lblCategoriaValor);
+            this.Controls.Add(this.lblPrecioValor);
+            this.Controls.Add(this.lblMarcaValor);
+            this.Controls.Add(this.lblNombreValor);
+            this.Controls.Add(this.lblCodigoValor);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.gbxImagenes);
-            this.Controls.Add(this.lblDescripcion);
-            this.Controls.Add(this.lblPrecio);
-            this.Controls.Add(this.lblCategoria);
-            this.Controls.Add(this.lblMarca);
-            this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.lblCodigo);
+            this.Controls.Add(this.lblDescripcionTitulo);
+            this.Controls.Add(this.lblPrecioTitulo);
+            this.Controls.Add(this.lblCategoriaTitulo);
+            this.Controls.Add(this.lblMarcaTitulo);
+            this.Controls.Add(this.lblNombreTitulo);
+            this.Controls.Add(this.lblCodigoTitulo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmDetalleArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalle de Artículo";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.frmDetalleArticulo_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pctbxImagenes)).EndInit();
             this.gbxImagenes.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -230,22 +250,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblMarca;
-        private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.Label lblPrecio;
-        private System.Windows.Forms.Label lblDescripcion;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblCodigoTitulo;
+        private System.Windows.Forms.Label lblNombreTitulo;
+        private System.Windows.Forms.Label lblMarcaTitulo;
+        private System.Windows.Forms.Label lblCategoriaTitulo;
+        private System.Windows.Forms.Label lblPrecioTitulo;
+        private System.Windows.Forms.Label lblDescripcionTitulo;
+        private System.Windows.Forms.PictureBox pctbxImagenes;
         private System.Windows.Forms.GroupBox gbxImagenes;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Label lblCod;
-        private System.Windows.Forms.Label lblNomb;
-        private System.Windows.Forms.Label lblMarc;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblCodigoValor;
+        private System.Windows.Forms.Label lblNombreValor;
+        private System.Windows.Forms.Label lblMarcaValor;
+        private System.Windows.Forms.Label lblPrecioValor;
+        private System.Windows.Forms.Label lblCategoriaValor;
+        private System.Windows.Forms.Label lblDescripcionValor;
     }
 }

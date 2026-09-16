@@ -25,5 +25,15 @@ namespace TPWinForm_equipo_8
         {
             this.Close();
         }
+
+        private void frmDetalleArticulo_Load(object sender, EventArgs e)
+        {
+            lblCodigoValor.Text = articulo.Codigo;
+            lblNombreValor.Text = articulo.Nombre;
+            lblMarcaValor.Text = articulo.Marca.Descripcion;
+            lblCategoriaValor.Text = articulo.Categoria.Descripcion;
+            lblPrecioValor.Text = articulo.Precio.ToString("0.00");
+            lblDescripcionValor.Text = articulo.Descripcion;
+        }
     }
 }

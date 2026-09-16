@@ -14,6 +14,7 @@ namespace TPWinForm_equipo_8
 {
     public partial class frmArticulos : Form
     {
+        private List<Articulo> listaArticulos;
         public frmArticulos()
         {
             InitializeComponent();
@@ -30,7 +31,8 @@ namespace TPWinForm_equipo_8
 
             try
             {
-                dgvArticulos.DataSource = negocio.listar();
+                listaArticulos = negocio.listar();
+                dgvArticulos.DataSource = listaArticulos;
             }
             catch (Exception ex)
             {
@@ -47,8 +49,13 @@ namespace TPWinForm_equipo_8
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            frmArticulo ventana = new frmArticulo();
-            ventana.Show();
+            Articulo seleccionado;
+            seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+            frmArticulo ventana = new frmArticulo(seleccionado);
+            ventana.ShowDialog();
+
+            cargar();
         }
 
         private void btnDetalle_Click(object sender, EventArgs e)
