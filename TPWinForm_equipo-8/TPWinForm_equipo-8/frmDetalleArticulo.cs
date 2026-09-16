@@ -7,15 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dominio;
 
 namespace TPWinForm_equipo_8
 {
     public partial class frmDetalleArticulo : Form
     {
-        public frmDetalleArticulo()
+        private Articulo articulo;
+        public frmDetalleArticulo(Articulo articulo)
         {
             InitializeComponent();
+            this.articulo = articulo;
         }
+
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {

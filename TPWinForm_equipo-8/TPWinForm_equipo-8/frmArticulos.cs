@@ -53,8 +53,11 @@ namespace TPWinForm_equipo_8
 
         private void btnDetalle_Click(object sender, EventArgs e)
         {
-            frmDetalleArticulo ventana = new frmDetalleArticulo();
-            ventana.Show();
+            
+            Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+
+            frmDetalleArticulo ventana = new frmDetalleArticulo(seleccionado);
+            ventana.ShowDialog();
         }
 
         // La eliminación se implementará en la Etapa 2 con la conexión a la base de datos.
