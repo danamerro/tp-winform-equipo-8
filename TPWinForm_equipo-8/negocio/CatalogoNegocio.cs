@@ -25,7 +25,7 @@ namespace negocio
                                 "A.IdCategoria, C.Descripcion AS Categoria " +
                                 "FROM ARTICULOS A " +
                                 "INNER JOIN MARCAS M ON A.IdMarca = M.Id " +
-                                "INNER JOIN CATEGORIAS C ON A.IdCategoria = C.Id");
+                                "LEFT JOIN CATEGORIAS C ON A.IdCategoria = C.Id");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -44,7 +44,10 @@ namespace negocio
 
                     aux.Categoria = new Categoria();
                     aux.Categoria.Id = (int)datos.Lector["IdCategoria"];
-                    aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
+                    if (!(datos.Lector["Categoria"] is DBNull))
+                        aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
+                    else
+                        aux.Categoria.Descripcion = "Categoría inexistente";
 
                     lista.Add(aux);
                 }
