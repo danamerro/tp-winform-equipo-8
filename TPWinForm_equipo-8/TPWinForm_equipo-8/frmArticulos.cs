@@ -19,13 +19,10 @@ namespace TPWinForm_equipo_8
         {
             InitializeComponent();
         }
-
         private void frmArticulos_Load(object sender, EventArgs e)
         {
             cargar();
         }
-
-
         private void cargar() { 
             CatalogoNegocio negocio  = new CatalogoNegocio();
 
@@ -39,14 +36,11 @@ namespace TPWinForm_equipo_8
                 MessageBox.Show(ex.Message);
             }
         }
-
-
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             frmArticulo ventana = new frmArticulo();
             ventana.Show();
         }
-
         private void btnModificar_Click(object sender, EventArgs e)
         {
             Articulo seleccionado;
@@ -57,7 +51,6 @@ namespace TPWinForm_equipo_8
 
             cargar();
         }
-
         private void btnDetalle_Click(object sender, EventArgs e)
         {
             

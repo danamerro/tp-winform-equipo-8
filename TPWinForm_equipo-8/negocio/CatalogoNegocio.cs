@@ -61,24 +61,57 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
-        //Falta: Agregar, filtrar, modificar, eliminar, etc.
+        //Falta: Agregar, filtrar,etc.
         public void agregar(Articulo nuevo)
         {
             //Insert
         }
         public void modificar(Articulo articulo)
         {
-            //Update
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta(
+                    "UPDATE ARTICULOS SET Codigo = @codigo," + 
+                    "Nombre = @nombre, Descripcion = @descripcion," + 
+                    "Precio = @precio, IdMarca = @Idmarca, IdCategoria = @Idcategoria WHERE Id = @id");
+                datos.setearParametro("@codigo", articulo.Codigo);
+                datos.setearParametro("@nombre", articulo.Nombre);
+                datos.setearParametro("@descripcion", articulo.Descripcion);
+                datos.setearParametro("@precio", articulo.Precio);
+                datos.setearParametro("@IdMarca", articulo.Marca.Id);
+                datos.setearParametro("@Idcategoria", articulo.Categoria.Id);
+                datos.setearParametro("@Id", articulo.Id);
+
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
         }
         public void eliminar(int id)
         {
-            //delete
-        }
-        /*
-        public List<Articulo> filtrar()
-        {
-            // búsqueda
-        }
-        */
+            try
+            {
+                AccesoDatos datos = new AccesoDatos();
+                datos.setearConsulta("DELETE FROM ARTICULOS WHERE Id = @id");
+                datos.setearParametro("@id", id);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }        
+        //public List<Articulo> filtrar()
+        //{
+            
+        //}
     }
 }
