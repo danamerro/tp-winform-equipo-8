@@ -64,15 +64,15 @@ namespace negocio
         //Falta: Agregar, filtrar, modificar, eliminar, etc.
         public void agregar(Articulo nuevo)
         {
-            //INSERT
+            //Insert
         }
         public void modificar(Articulo articulo)
         {
-            // UPDATE
+            //Update
         }
         public void eliminar(int id)
         {
-            // DELETE
+            //delete
         }
         /*
         public List<Articulo> filtrar()

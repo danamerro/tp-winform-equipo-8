@@ -67,12 +67,28 @@ namespace TPWinForm_equipo_8
             ventana.ShowDialog();
         }
 
-        // La eliminación se implementará en la Etapa 2 con la conexión a la base de datos.
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            CatalogoNegocio Neg = new CatalogoNegocio();
+            Articulo seleccionado;
+
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿De verdad queres Eliminar?", "Eliminado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (respuesta == DialogResult.Yes)
+                {
+                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                    Neg.eliminar(seleccionado.Id);
+                    cargar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
 
         }
 
-        
+
     }
 }
