@@ -1,5 +1,4 @@
 ﻿using dominio;
-using dominio;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -61,10 +60,36 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
-        //Falta: Agregar, filtrar,etc.
+        //Falta: filtrar.
         public void agregar(Articulo nuevo)
         {
-            //Insert
+            AccesoDatos datos = new AccesoDatos();
+
+            try
+            {
+                datos.setearConsulta(
+                    "INSERT INTO ARTICULOS " +
+                    "(Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) " +
+                    "VALUES (@codigo, @nombre, @descripcion, @idMarca, @idCategoria, @precio)"
+                );
+
+                datos.setearParametro("@codigo", nuevo.Codigo);
+                datos.setearParametro("@nombre", nuevo.Nombre);
+                datos.setearParametro("@descripcion", nuevo.Descripcion);
+                datos.setearParametro("@idMarca", nuevo.Marca.Id);
+                datos.setearParametro("@idCategoria", nuevo.Categoria.Id);
+                datos.setearParametro("@precio", nuevo.Precio);
+
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
         }
         public void modificar(Articulo articulo)
         {
