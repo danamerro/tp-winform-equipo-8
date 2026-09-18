@@ -61,7 +61,7 @@ namespace negocio
             }
         }
         //Falta: filtrar.
-        public void agregar(Articulo nuevo)
+        public int agregar(Articulo nuevo)
         {
             AccesoDatos datos = new AccesoDatos();
 
@@ -80,7 +80,7 @@ namespace negocio
                 datos.setearParametro("@idCategoria", nuevo.Categoria.Id);
                 datos.setearParametro("@precio", nuevo.Precio);
 
-                datos.ejecutarAccion();
+                return Convert.ToInt32(datos.ejecutarScalar());
             }
             catch (Exception ex)
             {

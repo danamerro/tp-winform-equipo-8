@@ -30,6 +30,9 @@ namespace TPWinForm_equipo_8
             {
                 listaArticulos = negocio.listar();
                 dgvArticulos.DataSource = listaArticulos;
+                dgvArticulos.Columns["Id"].Visible = false;
+                dgvArticulos.Columns["Codigo"].Visible = false;
+
             }
             catch (Exception ex)
             {

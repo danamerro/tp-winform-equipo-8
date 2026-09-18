@@ -48,6 +48,8 @@
             this.btnEliminarImagen = new System.Windows.Forms.Button();
             this.lvUrlImagen = new System.Windows.Forms.ListView();
             this.gbxImagenes = new System.Windows.Forms.GroupBox();
+            this.tbxUrlImagen = new System.Windows.Forms.TextBox();
+            this.lblImagenUrl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
             this.gbVistaPrevia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
@@ -75,7 +77,7 @@
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(54, 155);
+            this.lblMarca.Location = new System.Drawing.Point(54, 199);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(57, 20);
             this.lblMarca.TabIndex = 4;
@@ -84,7 +86,7 @@
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(30, 208);
+            this.lblCategoria.Location = new System.Drawing.Point(30, 252);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(82, 20);
             this.lblCategoria.TabIndex = 5;
@@ -93,7 +95,7 @@
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(54, 262);
+            this.lblPrecio.Location = new System.Drawing.Point(54, 306);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(57, 20);
             this.lblPrecio.TabIndex = 6;
@@ -133,7 +135,7 @@
             // 
             this.cbxMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxMarca.FormattingEnabled = true;
-            this.cbxMarca.Location = new System.Drawing.Point(122, 155);
+            this.cbxMarca.Location = new System.Drawing.Point(122, 199);
             this.cbxMarca.Name = "cbxMarca";
             this.cbxMarca.Size = new System.Drawing.Size(242, 28);
             this.cbxMarca.TabIndex = 11;
@@ -142,7 +144,7 @@
             // 
             this.cbxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxCategoria.FormattingEnabled = true;
-            this.cbxCategoria.Location = new System.Drawing.Point(122, 208);
+            this.cbxCategoria.Location = new System.Drawing.Point(122, 252);
             this.cbxCategoria.Name = "cbxCategoria";
             this.cbxCategoria.Size = new System.Drawing.Size(242, 28);
             this.cbxCategoria.TabIndex = 12;
@@ -155,7 +157,7 @@
             0,
             0,
             131072});
-            this.nudPrecio.Location = new System.Drawing.Point(123, 262);
+            this.nudPrecio.Location = new System.Drawing.Point(123, 306);
             this.nudPrecio.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -198,9 +200,9 @@
             // 
             // pbImagen
             // 
-            this.pbImagen.Location = new System.Drawing.Point(24, 25);
+            this.pbImagen.Location = new System.Drawing.Point(64, 25);
             this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(384, 149);
+            this.pbImagen.Size = new System.Drawing.Size(300, 149);
             this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen.TabIndex = 0;
             this.pbImagen.TabStop = false;
@@ -234,6 +236,7 @@
             this.lvUrlImagen.TabIndex = 19;
             this.lvUrlImagen.UseCompatibleStateImageBehavior = false;
             this.lvUrlImagen.View = System.Windows.Forms.View.List;
+            this.lvUrlImagen.SelectedIndexChanged += new System.EventHandler(this.lvUrlImagen_SelectedIndexChanged);
             // 
             // gbxImagenes
             // 
@@ -247,11 +250,29 @@
             this.gbxImagenes.TabStop = false;
             this.gbxImagenes.Text = "Imágenes del Articulo";
             // 
+            // tbxUrlImagen
+            // 
+            this.tbxUrlImagen.Location = new System.Drawing.Point(123, 148);
+            this.tbxUrlImagen.Name = "tbxUrlImagen";
+            this.tbxUrlImagen.Size = new System.Drawing.Size(242, 26);
+            this.tbxUrlImagen.TabIndex = 22;
+            // 
+            // lblImagenUrl
+            // 
+            this.lblImagenUrl.AutoSize = true;
+            this.lblImagenUrl.Location = new System.Drawing.Point(22, 148);
+            this.lblImagenUrl.Name = "lblImagenUrl";
+            this.lblImagenUrl.Size = new System.Drawing.Size(91, 20);
+            this.lblImagenUrl.TabIndex = 21;
+            this.lblImagenUrl.Text = "Url Imagen:";
+            // 
             // frmArticulo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 409);
+            this.Controls.Add(this.tbxUrlImagen);
+            this.Controls.Add(this.lblImagenUrl);
             this.Controls.Add(this.gbxImagenes);
             this.Controls.Add(this.gbVistaPrevia);
             this.Controls.Add(this.btnCancelar);
@@ -304,5 +325,7 @@
         private System.Windows.Forms.Button btnEliminarImagen;
         private System.Windows.Forms.ListView lvUrlImagen;
         private System.Windows.Forms.GroupBox gbxImagenes;
+        private System.Windows.Forms.TextBox tbxUrlImagen;
+        private System.Windows.Forms.Label lblImagenUrl;
     }
 }
