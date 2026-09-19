@@ -60,7 +60,7 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
-        //Falta: filtrar.
+        
         public int agregar(Articulo nuevo)
         {
             AccesoDatos datos = new AccesoDatos();
@@ -70,6 +70,7 @@ namespace negocio
                 datos.setearConsulta(
                     "INSERT INTO ARTICULOS " +
                     "(Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) " +
+                    "OUTPUT INSERTED.Id"+
                     "VALUES (@codigo, @nombre, @descripcion, @idMarca, @idCategoria, @precio)"
                 );
 
