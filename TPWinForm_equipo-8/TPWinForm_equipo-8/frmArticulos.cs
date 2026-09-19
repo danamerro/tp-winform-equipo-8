@@ -22,6 +22,7 @@ namespace TPWinForm_equipo_8
         private void frmArticulos_Load(object sender, EventArgs e)
         {
             cargar();
+            cargarFiltros();
         }
         private void cargar() { 
             CatalogoNegocio negocio  = new CatalogoNegocio();
@@ -39,6 +40,65 @@ namespace TPWinForm_equipo_8
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void cargarFiltros()
+        {
+            MarcaNegocio marcaNegocio = new MarcaNegocio();
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+
+            List<Marca> marcas = marcaNegocio.listar();
+            marcas.Insert(0, new Marca { Id = 0, Descripcion = "" });
+
+            List<Categoria> categorias = categoriaNegocio.listar();
+            categorias.Insert(0, new Categoria { Id = 0, Descripcion = "" });
+
+            cbxMarca.DataSource = marcas;
+            cbxCategoria.DataSource = categorias;
+
+            cbxMarca.SelectedIndex = 0;
+            cbxCategoria.SelectedIndex = 0;
+            txbFiltro.Clear();
+        }
+
+        private void filtrarArticulos()
+        {
+            IEnumerable<Articulo> resultado = listaArticulos;
+
+            Marca marcaSeleccionada = (Marca)cbxMarca.SelectedItem;
+            Categoria categoriaSeleccionada = (Categoria)cbxCategoria.SelectedItem;
+            string filtro = txbFiltro.Text.Trim();
+
+            
+            if (marcaSeleccionada != null && marcaSeleccionada.Id != 0)
+            {
+                resultado = resultado.Where(
+                    articulo => articulo.Marca.Id == marcaSeleccionada.Id
+                );
+            }
+
+            
+            if (categoriaSeleccionada != null && categoriaSeleccionada.Id != 0)
+            {
+                resultado = resultado.Where(
+                    articulo => articulo.Categoria.Id == categoriaSeleccionada.Id
+                );
+            }
+
+            
+            if (!string.IsNullOrWhiteSpace(filtro))
+            {
+                resultado = resultado.Where(
+                    articulo =>
+                        articulo.Nombre.IndexOf(filtro, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                        articulo.Descripcion.IndexOf(filtro, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                        articulo.Marca.Descripcion.IndexOf(filtro, StringComparison.OrdinalIgnoreCase) >= 0 ||
+                        articulo.Categoria.Descripcion.IndexOf(filtro, StringComparison.OrdinalIgnoreCase) >= 0
+                );
+            }
+
+            dgvArticulos.DataSource = resultado.ToList();
+        }
+
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             frmArticulo ventana = new frmArticulo();
@@ -89,7 +149,7 @@ namespace TPWinForm_equipo_8
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-           
+            filtrarArticulos();
         }
     }
 }
