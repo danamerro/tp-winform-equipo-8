@@ -85,8 +85,11 @@ namespace TPWinForm_equipo_8
                 MessageBox.Show(ex.ToString());
             }
 
+        }    
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+           
         }
-
-
     }
 }
