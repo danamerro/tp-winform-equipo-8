@@ -45,7 +45,7 @@ namespace TPWinForm_equipo_8
         {
             MarcaNegocio marcaNegocio = new MarcaNegocio();
             CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
-
+            
             List<Marca> marcas = marcaNegocio.listar();
             marcas.Insert(0, new Marca { Id = 0, Descripcion = "" });
 

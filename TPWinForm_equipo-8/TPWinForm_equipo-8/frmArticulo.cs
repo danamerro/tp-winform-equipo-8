@@ -67,13 +67,16 @@ namespace TPWinForm_equipo_8
                     articulo.Imagenes.Clear();
                     lvUrlImagen.Items.Clear();
 
-                    List<Imagen> imagenes = negImagen.ListarPorArticulo(articulo.Id);
+                    if (articulo.Id != 0) {
+                        List<Imagen> imagenes = negImagen.ListarPorArticulo(articulo.Id);
 
-                    foreach (Imagen imagen in imagenes)
-                    {
-                        articulo.Imagenes.Add(imagen);
-                        lvUrlImagen.Items.Add(imagen.ImagenUrl);
+                        foreach (Imagen imagen in imagenes)
+                        {
+                            articulo.Imagenes.Add(imagen);
+                            lvUrlImagen.Items.Add(imagen.ImagenUrl);
+                        }
                     }
+                    
                 }
             }
             catch (Exception ex)
