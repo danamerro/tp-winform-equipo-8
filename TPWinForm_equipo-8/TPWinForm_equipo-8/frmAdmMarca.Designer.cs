@@ -39,10 +39,10 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(246, 27);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
+            this.btnNuevo.Location = new System.Drawing.Point(328, 33);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(88, 28);
+            this.btnNuevo.Size = new System.Drawing.Size(117, 34);
             this.btnNuevo.TabIndex = 0;
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -50,10 +50,10 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(246, 72);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificar.Location = new System.Drawing.Point(328, 89);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(88, 28);
+            this.btnModificar.Size = new System.Drawing.Size(117, 34);
             this.btnModificar.TabIndex = 1;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -61,10 +61,10 @@
             // 
             // btnEliminarAdmMarca
             // 
-            this.btnEliminarAdmMarca.Location = new System.Drawing.Point(246, 117);
-            this.btnEliminarAdmMarca.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarAdmMarca.Location = new System.Drawing.Point(328, 144);
+            this.btnEliminarAdmMarca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminarAdmMarca.Name = "btnEliminarAdmMarca";
-            this.btnEliminarAdmMarca.Size = new System.Drawing.Size(88, 28);
+            this.btnEliminarAdmMarca.Size = new System.Drawing.Size(117, 34);
             this.btnEliminarAdmMarca.TabIndex = 2;
             this.btnEliminarAdmMarca.Text = "Eliminar";
             this.btnEliminarAdmMarca.UseVisualStyleBackColor = true;
@@ -72,26 +72,28 @@
             // 
             // dgvMarcas
             // 
+            this.dgvMarcas.AllowUserToResizeColumns = false;
+            this.dgvMarcas.AllowUserToResizeRows = false;
             this.dgvMarcas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMarcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMarcas.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvMarcas.Location = new System.Drawing.Point(32, 27);
-            this.dgvMarcas.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvMarcas.Location = new System.Drawing.Point(43, 33);
+            this.dgvMarcas.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvMarcas.MultiSelect = false;
             this.dgvMarcas.Name = "dgvMarcas";
             this.dgvMarcas.RowHeadersVisible = false;
             this.dgvMarcas.RowHeadersWidth = 62;
             this.dgvMarcas.RowTemplate.Height = 28;
             this.dgvMarcas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMarcas.Size = new System.Drawing.Size(182, 162);
+            this.dgvMarcas.Size = new System.Drawing.Size(243, 199);
             this.dgvMarcas.TabIndex = 3;
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(246, 161);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSalir.Location = new System.Drawing.Point(328, 198);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(88, 28);
+            this.btnSalir.Size = new System.Drawing.Size(117, 34);
             this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -99,10 +101,10 @@
             // 
             // frmAdmMarca
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Beige;
-            this.ClientSize = new System.Drawing.Size(364, 222);
+            this.ClientSize = new System.Drawing.Size(485, 273);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvMarcas);
             this.Controls.Add(this.btnEliminarAdmMarca);
@@ -110,9 +112,9 @@
             this.Controls.Add(this.btnNuevo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(385, 273);
+            this.MaximumSize = new System.Drawing.Size(507, 325);
             this.Name = "frmAdmMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administración de Marca";
