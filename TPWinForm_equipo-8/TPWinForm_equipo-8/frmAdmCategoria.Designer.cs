@@ -39,73 +39,83 @@
             // dgvAdmCategoria
             // 
             this.dgvAdmCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
             this.dgvAdmCategoria.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvAdmCategoria.Location = new System.Drawing.Point(22, 22);
+=======
+            this.dgvAdmCategoria.Location = new System.Drawing.Point(20, 18);
+>>>>>>> 4d34fc9748b6f6760d1904018405b4b7415ee8ca
             this.dgvAdmCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvAdmCategoria.MultiSelect = false;
             this.dgvAdmCategoria.Name = "dgvAdmCategoria";
+            this.dgvAdmCategoria.ReadOnly = true;
             this.dgvAdmCategoria.RowHeadersWidth = 62;
             this.dgvAdmCategoria.RowTemplate.Height = 28;
             this.dgvAdmCategoria.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAdmCategoria.Size = new System.Drawing.Size(272, 249);
+            this.dgvAdmCategoria.Size = new System.Drawing.Size(242, 199);
             this.dgvAdmCategoria.TabIndex = 0;
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(322, 22);
+            this.btnNuevo.Location = new System.Drawing.Point(286, 18);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(143, 49);
-            this.btnNuevo.TabIndex = 1;
-            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(127, 39);
+            this.btnNuevo.TabIndex = 0;
+            this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(323, 88);
+            this.btnModificar.Location = new System.Drawing.Point(287, 70);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(142, 49);
-            this.btnModificar.TabIndex = 2;
-            this.btnModificar.Text = "Modificar";
+            this.btnModificar.Size = new System.Drawing.Size(126, 39);
+            this.btnModificar.TabIndex = 1;
+            this.btnModificar.Text = "&Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(322, 156);
+            this.btnEliminar.Location = new System.Drawing.Point(286, 125);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(143, 49);
-            this.btnEliminar.TabIndex = 3;
-            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(127, 39);
+            this.btnEliminar.TabIndex = 2;
+            this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(322, 221);
+            this.btnSalir.Location = new System.Drawing.Point(286, 177);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(143, 50);
-            this.btnSalir.TabIndex = 4;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Size = new System.Drawing.Size(127, 40);
+            this.btnSalir.TabIndex = 3;
+            this.btnSalir.Text = "&Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmAdmCategoria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 299);
+            this.ClientSize = new System.Drawing.Size(446, 239);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dgvAdmCategoria);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
+<<<<<<< HEAD
             this.MaximumSize = new System.Drawing.Size(524, 355);
+=======
+>>>>>>> 4d34fc9748b6f6760d1904018405b4b7415ee8ca
             this.Name = "frmAdmCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administración de Categorias";

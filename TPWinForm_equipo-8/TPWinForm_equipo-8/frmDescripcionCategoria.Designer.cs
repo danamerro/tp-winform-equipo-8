@@ -37,25 +37,27 @@
             // lblDescripcion
             // 
             this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(58, 51);
+            this.lblDescripcion.Location = new System.Drawing.Point(34, 49);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(96, 20);
+            this.lblDescripcion.Size = new System.Drawing.Size(82, 16);
             this.lblDescripcion.TabIndex = 0;
             this.lblDescripcion.Text = "Descripción:";
             // 
             // tbxDescripcion
             // 
-            this.tbxDescripcion.Location = new System.Drawing.Point(160, 48);
+            this.tbxDescripcion.Location = new System.Drawing.Point(122, 43);
+            this.tbxDescripcion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxDescripcion.Multiline = true;
             this.tbxDescripcion.Name = "tbxDescripcion";
-            this.tbxDescripcion.Size = new System.Drawing.Size(214, 49);
+            this.tbxDescripcion.Size = new System.Drawing.Size(191, 27);
             this.tbxDescripcion.TabIndex = 1;
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(50, 157);
+            this.btnAceptar.Location = new System.Drawing.Point(122, 85);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(133, 39);
+            this.btnAceptar.Size = new System.Drawing.Size(80, 33);
             this.btnAceptar.TabIndex = 2;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
@@ -63,9 +65,10 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(259, 157);
+            this.btnCancelar.Location = new System.Drawing.Point(233, 87);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(133, 39);
+            this.btnCancelar.Size = new System.Drawing.Size(80, 31);
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -73,14 +76,20 @@
             // 
             // frmDescripcionCategoria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(445, 234);
+            this.ClientSize = new System.Drawing.Size(372, 164);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.tbxDescripcion);
             this.Controls.Add(this.lblDescripcion);
+<<<<<<< HEAD
             this.MaximumSize = new System.Drawing.Size(467, 290);
+=======
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+>>>>>>> 4d34fc9748b6f6760d1904018405b4b7415ee8ca
             this.Name = "frmDescripcionCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categoría";

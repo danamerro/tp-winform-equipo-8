@@ -56,14 +56,22 @@
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
+<<<<<<< HEAD
             this.marcasToolStripMenuItem.Size = new System.Drawing.Size(198, 34);
+=======
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+>>>>>>> 4d34fc9748b6f6760d1904018405b4b7415ee8ca
             this.marcasToolStripMenuItem.Text = "&Marcas";
             this.marcasToolStripMenuItem.Click += new System.EventHandler(this.marcasToolStripMenuItem_Click);
             // 
             // categoriasToolStripMenuItem
             // 
             this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
+<<<<<<< HEAD
             this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(198, 34);
+=======
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(163, 26);
+>>>>>>> 4d34fc9748b6f6760d1904018405b4b7415ee8ca
             this.categoriasToolStripMenuItem.Text = "&Categorías";
             this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
             // 
@@ -95,8 +103,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
+<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+=======
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+>>>>>>> 4d34fc9748b6f6760d1904018405b4b7415ee8ca
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TP Windows - Equipo 8";
