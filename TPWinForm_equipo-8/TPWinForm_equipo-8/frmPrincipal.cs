@@ -1,6 +1,7 @@
 ﻿using System.Windows.Forms;
 using dominio;
 
+
 namespace TPWinForm_equipo_8
 {
     public partial class frmPrincipal : Form
@@ -33,9 +34,6 @@ namespace TPWinForm_equipo_8
             ventana.Show();
         }
 
-        private void frmPrincipal_Load(object sender, System.EventArgs e)
-        {
-
-        }
+        
     }
 }
