@@ -113,7 +113,7 @@
             // pctbxImagenes
             // 
             this.pctbxImagenes.Location = new System.Drawing.Point(4, 17);
-            this.pctbxImagenes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pctbxImagenes.Margin = new System.Windows.Forms.Padding(2);
             this.pctbxImagenes.Name = "pctbxImagenes";
             this.pctbxImagenes.Size = new System.Drawing.Size(194, 180);
             this.pctbxImagenes.TabIndex = 6;
@@ -125,9 +125,9 @@
             this.gbxImagenes.Controls.Add(this.btnAnterior);
             this.gbxImagenes.Controls.Add(this.pctbxImagenes);
             this.gbxImagenes.Location = new System.Drawing.Point(259, 31);
-            this.gbxImagenes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbxImagenes.Margin = new System.Windows.Forms.Padding(2);
             this.gbxImagenes.Name = "gbxImagenes";
-            this.gbxImagenes.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbxImagenes.Padding = new System.Windows.Forms.Padding(2);
             this.gbxImagenes.Size = new System.Drawing.Size(206, 236);
             this.gbxImagenes.TabIndex = 13;
             this.gbxImagenes.TabStop = false;
@@ -136,7 +136,7 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Location = new System.Drawing.Point(117, 202);
-            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(2);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(74, 26);
             this.btnSiguiente.TabIndex = 1;
@@ -148,7 +148,7 @@
             // 
             this.btnAnterior.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnAnterior.Location = new System.Drawing.Point(16, 202);
-            this.btnAnterior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAnterior.Margin = new System.Windows.Forms.Padding(2);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(70, 26);
             this.btnAnterior.TabIndex = 0;
@@ -159,7 +159,7 @@
             // btnCerrar
             // 
             this.btnCerrar.Location = new System.Drawing.Point(394, 271);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(70, 26);
             this.btnCerrar.TabIndex = 11;
@@ -243,8 +243,10 @@
             this.Controls.Add(this.lblCodigoTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(494, 353);
+            this.MinimizeBox = false;
             this.Name = "frmDetalleArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detalle de Artículo";
