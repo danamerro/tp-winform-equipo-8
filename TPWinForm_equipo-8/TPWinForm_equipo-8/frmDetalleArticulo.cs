@@ -17,6 +17,7 @@ namespace TPWinForm_equipo_8
         private Articulo articulo;
         private List<Imagen> imagenes;
         private int indiceImagen = 0;
+        private const string IMAGEN_DEFAULT = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMjWw3II3uHdeGXs7eAvwN8hs-aZpGFayzMSiAfFRmKZhiTT_xaDXXU_HY&s=10";
         public frmDetalleArticulo(Articulo articulo)
         {
             InitializeComponent();
@@ -46,7 +47,8 @@ namespace TPWinForm_equipo_8
             }
             else
             {
-                pctbxImagenes.Image = null;
+                //pctbxImagenes.Image = null;
+                cargarImagenDefault();
             }
         }
         private void cargarImagen()
@@ -58,9 +60,23 @@ namespace TPWinForm_equipo_8
             }
             catch (Exception)
             {
+                //pctbxImagenes.Image = null;
+                cargarImagenDefault();
+            }
+        }
+        private void cargarImagenDefault()
+        {
+            try
+            {
+                pctbxImagenes.Load(IMAGEN_DEFAULT);
+                pctbxImagenes.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            catch (Exception)
+            {
                 pctbxImagenes.Image = null;
             }
         }
+
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
             if (imagenes == null || imagenes.Count == 0)
