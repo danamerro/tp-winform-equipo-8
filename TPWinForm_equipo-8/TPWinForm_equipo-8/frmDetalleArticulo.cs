@@ -17,16 +17,18 @@ namespace TPWinForm_equipo_8
         private Articulo articulo;
         private List<Imagen> imagenes;
         private int indiceImagen = 0;
-        private const string IMAGEN_DEFAULT = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMjWw3II3uHdeGXs7eAvwN8hs-aZpGFayzMSiAfFRmKZhiTT_xaDXXU_HY&s=10";
         public frmDetalleArticulo(Articulo articulo)
         {
             InitializeComponent();
             this.articulo = articulo;
         }
+
+
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
         private void frmDetalleArticulo_Load(object sender, EventArgs e)
         {
             lblCodigoValor.Text = articulo.Codigo;
@@ -47,28 +49,15 @@ namespace TPWinForm_equipo_8
             }
             else
             {
-                //pctbxImagenes.Image = null;
-                cargarImagenDefault();
+                pctbxImagenes.Image = null;
             }
         }
+
         private void cargarImagen()
         {
             try
             {
                 pctbxImagenes.Load(imagenes[indiceImagen].ImagenUrl);
-                pctbxImagenes.SizeMode = PictureBoxSizeMode.Zoom;
-            }
-            catch (Exception)
-            {
-                //pctbxImagenes.Image = null;
-                cargarImagenDefault();
-            }
-        }
-        private void cargarImagenDefault()
-        {
-            try
-            {
-                pctbxImagenes.Load(IMAGEN_DEFAULT);
                 pctbxImagenes.SizeMode = PictureBoxSizeMode.Zoom;
             }
             catch (Exception)
@@ -89,6 +78,7 @@ namespace TPWinForm_equipo_8
 
             cargarImagen();
         }
+
         private void btnAnterior_Click(object sender, EventArgs e)
         {
             if (imagenes == null || imagenes.Count == 0)

@@ -17,7 +17,7 @@ namespace TPWinForm_equipo_8
         private List<Articulo> listaArticulos;
         public frmArticulos()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
         private void frmArticulos_Load(object sender, EventArgs e)
         {
@@ -150,6 +150,6 @@ namespace TPWinForm_equipo_8
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             filtrarArticulos();
-        }       
+        }
     }
 }
