@@ -289,6 +289,7 @@
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblCodigo);
+            this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(872, 439);
             this.Name = "frmArticulo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -103,6 +103,8 @@
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnNuevo);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(569, 397);
             this.Name = "frmAdmMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administración de Marca";

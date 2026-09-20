@@ -80,6 +80,7 @@
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAceptar);
+            this.MaximumSize = new System.Drawing.Size(461, 310);
             this.Name = "frmDescripcionMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marca";

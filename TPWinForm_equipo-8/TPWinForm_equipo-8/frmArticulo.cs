@@ -98,10 +98,22 @@ namespace TPWinForm_equipo_8
                 articulo.Codigo = tbxCodigo.Text;
                 articulo.Nombre = tbxNombre.Text;
                 articulo.Descripcion = tbxDescripcion.Text;
+
+                if(nudPrecio.Value <= 0)
+                {
+                    MessageBox.Show("El precio debe ser mayor a 0");
+                    return;
+                }
+
                 articulo.Precio = nudPrecio.Value;
                 articulo.Marca = (Marca)cbxMarca.SelectedItem;
                 articulo.Categoria = (Categoria)cbxCategoria.SelectedItem;
-                //agregar url 
+
+                if (!string.IsNullOrEmpty(tbxUrlImagen.Text))
+                {
+                    MessageBox.Show("Hay una Url escrita. Presiona 'Agregar Imagen' para agregarla a la lista y poder guardar", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
                 if(articulo.Id == 0)
                 {
@@ -151,6 +163,13 @@ namespace TPWinForm_equipo_8
                 MessageBox.Show("Seleccione una imagen ");
                 return;
             }
+
+            DialogResult resultado = MessageBox.Show("¿De verdad querés Eliminar?", "Eliminado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (resultado == DialogResult.No)
+            {
+                return;
+            }
+
             string url = lvUrlImagen.SelectedItems[0].Text;
             Imagen imagen = articulo.Imagenes.Find(x => x.ImagenUrl == url);
 

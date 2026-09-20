@@ -32,5 +32,10 @@ namespace TPWinForm_equipo_8
             frmAdmCategoria ventana = new frmAdmCategoria();
             ventana.Show();
         }
+
+        private void frmPrincipal_Load(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

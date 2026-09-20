@@ -80,6 +80,7 @@
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.tbxDescripcion);
             this.Controls.Add(this.lblDescripcion);
+            this.MaximumSize = new System.Drawing.Size(467, 290);
             this.Name = "frmDescripcionCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Categoría";

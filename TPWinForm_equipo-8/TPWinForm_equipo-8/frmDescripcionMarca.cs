@@ -43,10 +43,15 @@ namespace TPWinForm_equipo_8
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            //agregar una validacion para que si o si se agregue una marca
             MarcaNegocio neg = new MarcaNegocio();
             try
             {
+                if (string.IsNullOrEmpty(tbxMarca.Text))
+                {
+                    MessageBox.Show("Debe ingresar una Marca");
+                    return;
+                }
+
                 if (marca == null)
                     marca = new Marca();
                 marca.Descripcion = tbxMarca.Text;
@@ -68,9 +73,6 @@ namespace TPWinForm_equipo_8
             {
                 MessageBox.Show(ex.ToString());
             }
-
-
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

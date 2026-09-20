@@ -53,6 +53,12 @@ namespace TPWinForm_equipo_8
 
             try
             {
+                if (string.IsNullOrEmpty(tbxDescripcion.Text))
+                {
+                    MessageBox.Show("Debe ingresar una Categoria");
+                    return;
+                }
+
                 if (categoria == null)
                     categoria = new Categoria();
                 categoria.Descripcion = tbxDescripcion.Text;

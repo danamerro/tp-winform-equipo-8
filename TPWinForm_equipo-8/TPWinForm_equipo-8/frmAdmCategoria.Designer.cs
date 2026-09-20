@@ -39,8 +39,10 @@
             // dgvAdmCategoria
             // 
             this.dgvAdmCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAdmCategoria.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvAdmCategoria.Location = new System.Drawing.Point(22, 22);
             this.dgvAdmCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvAdmCategoria.MultiSelect = false;
             this.dgvAdmCategoria.Name = "dgvAdmCategoria";
             this.dgvAdmCategoria.RowHeadersWidth = 62;
             this.dgvAdmCategoria.RowTemplate.Height = 28;
@@ -102,6 +104,8 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dgvAdmCategoria);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(524, 355);
             this.Name = "frmAdmCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administración de Categorias";
