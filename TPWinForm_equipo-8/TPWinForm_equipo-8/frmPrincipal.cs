@@ -1,5 +1,6 @@
-﻿using System.Windows.Forms;
-using dominio;
+﻿using dominio;
+using System;
+using System.Windows.Forms;
 
 
 namespace TPWinForm_equipo_8
@@ -32,6 +33,11 @@ namespace TPWinForm_equipo_8
         {
             frmAdmCategoria ventana = new frmAdmCategoria();
             ventana.ShowDialog();
+        }
+
+        private void frmPrincipal_Load(object sender, System.EventArgs e)
+        {
+            lblFecha.Text = DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy");
         }
     }
 }

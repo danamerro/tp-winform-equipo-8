@@ -155,7 +155,9 @@
       <Name>negocio</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Imagenes\UTN_logo.ico" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Imagenes\carrito.png" />
   </ItemGroup>
