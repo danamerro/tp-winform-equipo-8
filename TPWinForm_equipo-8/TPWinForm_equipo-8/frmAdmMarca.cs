@@ -33,6 +33,7 @@ namespace TPWinForm_equipo_8
                 listaMarcas = marca.listar();
                 dgvMarcas.DataSource = listaMarcas;
                 dgvMarcas.Columns["Id"].Visible = false;
+                dgvMarcas.RowHeadersVisible = false;
 
             }
             catch (Exception ex)

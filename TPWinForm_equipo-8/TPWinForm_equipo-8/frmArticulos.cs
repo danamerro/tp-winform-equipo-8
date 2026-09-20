@@ -33,6 +33,7 @@ namespace TPWinForm_equipo_8
                 dgvArticulos.DataSource = listaArticulos;
                 dgvArticulos.Columns["Id"].Visible = false;
                 dgvArticulos.Columns["Codigo"].Visible = false;
+                dgvArticulos.RowHeadersVisible = false;
 
             }
             catch (Exception ex)

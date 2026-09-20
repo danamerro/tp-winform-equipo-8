@@ -37,6 +37,7 @@ namespace TPWinForm_equipo_8
                 listaCategorias = categoria.listar();
                 dgvAdmCategoria.DataSource = listaCategorias;
                 dgvAdmCategoria.Columns["Id"].Visible = false;
+                dgvAdmCategoria.RowHeadersVisible = false;
 
             }
             catch (Exception ex)
