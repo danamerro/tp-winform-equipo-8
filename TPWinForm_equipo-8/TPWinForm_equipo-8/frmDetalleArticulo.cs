@@ -22,13 +22,10 @@ namespace TPWinForm_equipo_8
             InitializeComponent();
             this.articulo = articulo;
         }
-
-
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void frmDetalleArticulo_Load(object sender, EventArgs e)
         {
             lblCodigoValor.Text = articulo.Codigo;
@@ -52,7 +49,6 @@ namespace TPWinForm_equipo_8
                 pctbxImagenes.Image = null;
             }
         }
-
         private void cargarImagen()
         {
             try
@@ -65,7 +61,6 @@ namespace TPWinForm_equipo_8
                 pctbxImagenes.Image = null;
             }
         }
-
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
             if (imagenes == null || imagenes.Count == 0)
@@ -78,7 +73,6 @@ namespace TPWinForm_equipo_8
 
             cargarImagen();
         }
-
         private void btnAnterior_Click(object sender, EventArgs e)
         {
             if (imagenes == null || imagenes.Count == 0)
